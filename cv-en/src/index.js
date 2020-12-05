@@ -1,13 +1,14 @@
 import React from "react";
-
-import ReactDOM from "react-dom";
-import { PDFViewer } from "@react-pdf/renderer";
 import MyDocument from "./Document";
+import ReactDOM from "react-dom";
+import ReactPDF from "@react-pdf/renderer";
 
-const App = () => (
-  <PDFViewer width="1000" height="800">
-    <MyDocument />
-  </PDFViewer>
-);
+ReactPDF.render(<MyDocument />, `./CV-EN.pdf`);
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// const App = () => (
+//   <PDFViewer width="1000" height="800">
+//     <MyDocument />
+//   </PDFViewer>
+// );
+
+// ReactDOM.render(<App />, document.getElementById("root"));

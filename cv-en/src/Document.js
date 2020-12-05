@@ -124,8 +124,7 @@ const styles = StyleSheet.create({
   link: {
     fontSize: 11,
     margin: 6,
-    borderBottom: 1,
-    borderBottomColor: "#AEAFAC",
+
     textDecoration: "none",
     color: "#077DCA",
   },
@@ -154,11 +153,22 @@ const MyDocument = () => (
         </Text>
 
         <Text style={styles.titleLeft}>Projects</Text>
+
+        <Text style={styles.headerLeft}>Acro Game</Text>
+        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
+        <Text style={styles.textLeft}>project made with passion for</Text>
+        <Text style={styles.textLeft}>acro yoga and programming </Text>
+        <Link style={styles.link} src="http://acrogame.net/">
+          Website
+        </Link>
+
         <Text style={styles.headerLeft}>My Shibari Life</Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           Gatsby.js
         </Text>
-        <Text style={styles.textLeft}>website of shibari school in Cracow</Text>
+        <Text style={styles.textLeft}>
+          website for shibari school in Cracow
+        </Text>
         <Text style={styles.textLeft}>project , design , code </Text>
         <Link
           style={styles.link}
@@ -179,18 +189,6 @@ const MyDocument = () => (
           Github
         </Link>
 
-        <Text style={styles.headerLeft}>Best Shop</Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          javaScript
-        </Text>
-        <Text style={styles.textLeft}>CodersLab workshop</Text>
-        <Link
-          style={styles.link}
-          src="https://github.com/KajaPiechowka/BestShop"
-        >
-          Github
-        </Link>
-
         <Text style={styles.headerLeft}>Oddam w Dobre Ręce</Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
         <Text style={styles.textLeft}>CodersLab workshop</Text>
@@ -202,7 +200,8 @@ const MyDocument = () => (
         </Link>
 
         <Text style={styles.titleLeft}>Languages</Text>
-        <Text style={styles.textLeft}>English</Text>
+        <Text style={styles.textLeft}>English (intermediate)</Text>
+        <Text style={styles.textLeft}>Spanish (beginner)</Text>
         <Text style={styles.titleLeft}>Hobby</Text>
         <Text style={styles.textLeft}>Joga/Acrojoga, RPG games,</Text>
         <Text style={styles.textLeft}>Rollerblades, Slackline,</Text>
@@ -221,6 +220,7 @@ const MyDocument = () => (
         >
           Kaja Piechówka
         </Text>
+
         <Text style={styles.title}>Courses</Text>
         <Text style={styles.header}>
           JavaScript Developer: React – Coders Lab
@@ -272,9 +272,10 @@ const MyDocument = () => (
             ...styles.text,
             fontSize: 9,
             positon: "absolute",
-            left: "-170px",
+            left: "-180px",
             bottom: "-50px",
             width: 550,
+            textAlign: "center",
           }}
         >
           I agree to the processing of personal data provided in this document
