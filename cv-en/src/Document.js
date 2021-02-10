@@ -146,10 +146,10 @@ const MyDocument = () => (
         <Text style={styles.textLeft}>kaja.piechowka@gmail.com</Text>
         <Text style={styles.titleLeft}>Technologies</Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          JavaScript, React.js
+          JavaScript, React.js, Wordpress
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          Gatsby.js, HTML, CSS
+          Gatsby.js, HTML, CSS, Figma.com
         </Text>
 
         <Text style={styles.titleLeft}>Projects</Text>
@@ -212,7 +212,7 @@ const MyDocument = () => (
         <Text
           style={{
             ...styles.title,
-            marginBottom: 60,
+            marginBottom: 30,
             fontSize: 20,
             marginTop: 0,
             color: "black",
@@ -220,8 +220,42 @@ const MyDocument = () => (
         >
           Kaja Piechówka
         </Text>
+        <Text
+          style={{
+            ...styles.text,
+
+            fontSize: 10,
+          }}
+        >
+          My last mentor used to say:
+        </Text>
+        <Text
+          style={{
+            ...styles.text,
+            fontWeight: "bold",
+            fontSize: 10,
+          }}
+        >
+          The best code is one that hasn't been written yet. No need to review
+        </Text>
+        <Text
+          style={{
+            ...styles.text,
+            marginBottom: 10,
+            fontWeight: "bold",
+            fontSize: 10,
+          }}
+        >
+          or debug. That's why a good plan and design are paramount!
+        </Text>
 
         <Text style={styles.title}>Courses</Text>
+        <Text style={styles.header}>Wordpress – Eduweb</Text>
+        <Text style={styles.text}>January 2021</Text>
+        <Text style={styles.text}>course of Wordpress from start</Text>
+        <Text style={styles.header}>Gatsby.js – Eduweb</Text>
+        <Text style={styles.text}>October 2020</Text>
+        <Text style={styles.text}>complete course of Gatsby</Text>
         <Text style={styles.header}>
           JavaScript Developer: React – Coders Lab
         </Text>
@@ -235,9 +269,7 @@ const MyDocument = () => (
         <Text style={styles.text}>
           a project aimed at preparing for team work in the Scrum
         </Text>
-        <Text style={styles.header}>Gatsby.js – Eduweb</Text>
-        <Text style={styles.text}>October 2020</Text>
-        <Text style={styles.text}>complete course of Gatsby</Text>
+
         <Text style={styles.header}>
           Computer Graphic Course – Szkoła Grafiki Komputerowej
         </Text>
@@ -257,11 +289,7 @@ const MyDocument = () => (
         <Text style={styles.text}>
           customer service, cash register service, goods delivery
         </Text>
-        <Text style={styles.header}>
-          DC Site Services, Great Britain – festival service
-        </Text>
-        <Text style={styles.text}>June 2019 – September 2019</Text>
-        <Text style={styles.text}>team leading , logistic</Text>
+
         <Text style={styles.title}>Education</Text>
         <Text style={styles.header}>Socrates High School, Cracow</Text>
         <Text style={styles.text}>September 2012 – April 2014</Text>
