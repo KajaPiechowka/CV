@@ -62,19 +62,9 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDidection: "column",
     height: 740,
+    paddingTop: 10,
   },
-  image: {
-    width: 100,
-    height: "auto",
-  },
-  imageHolder: {
-    backgroundColor: "#AEAFAC",
-    width: "100%",
-    height: "22%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
+
   title: {
     fontFamily: "Lato",
     fontWeight: "bold",
@@ -92,7 +82,7 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
     color: "#077DCA",
     fontSize: 14,
-    margin: 6,
+    margin: "10 6 6 6",
   },
   header: {
     fontFamily: "Lato",
@@ -135,9 +125,6 @@ const MyDocument = () => (
   <Document>
     <Page style={styles.page}>
       <View style={styles.aside}>
-        <View style={styles.imageHolder}>
-          <Image src={FaceImg} alt="ProfileFoto" style={styles.image} />
-        </View>
         <Text style={styles.titleLeft}>Personal Data</Text>
         <Text style={styles.textLeft}>Cracow (mobile location)</Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
@@ -208,7 +195,6 @@ const MyDocument = () => (
         <Text style={styles.textLeft}>Rock Music, Painting</Text>
       </View>
       <View style={styles.section}>
-        <Text style={styles.text}>Curriculum Vitae</Text>
         <Text
           style={{
             ...styles.title,
@@ -301,7 +287,7 @@ const MyDocument = () => (
             fontSize: 9,
             positon: "absolute",
             left: "-180px",
-            bottom: "-50px",
+            bottom: "-40px",
             width: 550,
             textAlign: "center",
           }}
