@@ -9,7 +9,7 @@ import {
   Font,
   Link,
 } from "@react-pdf/renderer";
-import FaceImg from "./assets/img/FaceImg.jpeg";
+
 import karla from "./assets/fonts/Karla-Regular.ttf";
 import karlaBold from "./assets/fonts/Karla-Bold.ttf";
 import lato from "./assets/fonts/Lato-Regular.ttf";
