@@ -101,6 +101,11 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#484849",
   },
+  textSmall: {
+    fontFamily: "Karla",
+    fontSize: 10,
+    color: "#484849",
+  },
   textLeft: {
     boxSizing: "borderBox",
     fontFamily: "Karla",
@@ -208,7 +213,7 @@ const MyDocument = () => (
         <Text style={styles.textLeft}>English (intermediate)</Text>
         <Text style={styles.textLeft}>Spanish (beginner)</Text>
         <Text style={styles.titleLeft}>Hobby</Text>
-        <Text style={styles.textLeft}>Joga, Acro Joga, Tabletop Games,</Text>
+        <Text style={styles.textLeft}>Yoga, Acro Yoga, Tabletop Games,</Text>
         <Text style={styles.textLeft}>Rollerblades, Slackline,</Text>
         <Text style={styles.textLeft}>Rock Music, Painting</Text>
       </View>
@@ -227,12 +232,16 @@ const MyDocument = () => (
         <Text style={{...styles.text,
           textTransform: "uppercase", marginBottom: 15, color: "#077DCA"}}>Junior Front-End Software Developer</Text>
 
+        <Text style={styles.textSmall}>A year ago, when I decided to change my profession, I did not think that</Text>
+        <Text style={styles.textSmall}>shortly after I would not see myself working in anything except programming.</Text>
+
+
         <Text style={styles.title}>Courses</Text>
 
         <Text style={styles.header}>
           JavaScript Developer: React – Coders Lab
         </Text>
-        <Text style={styles.text}>March 2020 - October 2020</Text>
+        <Text style={styles.text}> March 2020 - October 2020</Text>
         <Text style={styles.text}> 434h of lessons</Text>
         <Text style={styles.text}>
           Advanced HTML and CSS, JavaScript, React.js course
@@ -240,7 +249,7 @@ const MyDocument = () => (
 
         <Text style={styles.header}>Advanced React – Eduweb</Text>
         <Text style={styles.text}>February 2021</Text>
-        <Text style={styles.text}>Advanced React.js course with Rdux, Context API, </Text>
+        <Text style={styles.text}>Advanced React.js course with Redux, Context API, </Text>
         <Text style={styles.text}>Styled Components, JEST Unit Tests</Text>
 
         <Text style={styles.header}>Gatsby.js – Eduweb</Text>
@@ -250,7 +259,7 @@ const MyDocument = () => (
         <Text style={styles.header}>Scrum Lab – Coders Lab</Text>
         <Text style={styles.text}>July 2020</Text>
         <Text style={styles.text}>
-          A project aimed at preparing for team work in the Scrum
+          A project aimed at preparing for teamwork in the Scrum
         </Text>
 
         <Text style={styles.header}>
@@ -284,7 +293,7 @@ const MyDocument = () => (
             fontSize: 9,
             positon: "absolute",
             left: "-170px",
-            bottom: "-70px",
+            bottom: "-40px",
             width: 550,
             textAlign: "center",
           }}
