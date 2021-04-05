@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
     color: "#077DCA",
-    fontSize: 16,
+    fontSize: 15,
     marginTop: 20,
     marginBottom: 8,
     borderBottom: 1,
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   header: {
     fontFamily: "Lato",
     fontWeight: "bold",
-    fontSize: 15,
+    fontSize: 14,
     marginBottom: 6,
     marginTop: 10,
   },
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: "Karla",
-    fontSize: 12,
+    fontSize: 11,
     color: "#484849",
   },
   textSmall: {
@@ -230,11 +230,25 @@ const MyDocument = () => (
           Kaja Piechówka
         </Text>
         <Text style={{...styles.text,
-          textTransform: "uppercase", marginBottom: 15, color: "#077DCA"}}>Junior Front-End Software Developer</Text>
+          textTransform: "uppercase", marginBottom: 5, color: "#077DCA"}}>Junior Front-End Software Developer</Text>
 
         <Text style={styles.textSmall}>A year ago, when I decided to change my profession, I did not think that</Text>
         <Text style={styles.textSmall}>shortly after I would not see myself working in anything except programming.</Text>
 
+        <Text style={styles.title}>EXPERIENCE</Text>
+        <Text style={styles.header}>Alpakara - Junior Frontend Developer</Text>
+        <Text style={styles.text}>March 2021 – May 2021</Text>
+        <Text style={styles.text}>
+          project "Self Authoring" written with React
+        </Text>
+        <Text style={styles.header}>F.H. KAJA-BIS, Cracow – Sales Manager</Text>
+        <Text style={styles.text}>December 2015 – Current</Text>
+        <Text style={styles.text}>
+          Employee management, delivery and ordering of goods,
+        </Text>
+        <Text style={styles.text}>
+          customer service, cash register service.
+        </Text>
 
         <Text style={styles.title}>Courses</Text>
 
@@ -272,15 +286,7 @@ const MyDocument = () => (
         <Text style={styles.text}>
           basics of marketing and advertising on the Internet
         </Text>
-        <Text style={styles.title}>EXPERIENCE</Text>
-        <Text style={styles.header}>F.H. KAJA-BIS, Cracow – Sales Manager</Text>
-        <Text style={styles.text}>December 2015 – Current</Text>
-        <Text style={styles.text}>
-          Employee management, delivery and ordering of goods,
-        </Text>
-        <Text style={styles.text}>
-          customer service, cash register service.
-        </Text>
+        
 
         <Text style={styles.title}>Education</Text>
         <Text style={styles.header}>Socrates High School, Cracow</Text>
