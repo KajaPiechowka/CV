@@ -147,7 +147,7 @@ const MyDocument = () => (
           Redux, Graphql, Rest API, 
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-           Trello,  Wordpress, Headless CMS 
+           Trello,  TypeScript, Headless CMS 
         </Text>
 
 
@@ -213,9 +213,11 @@ const MyDocument = () => (
         <Text style={styles.textLeft}>English (intermediate)</Text>
         <Text style={styles.textLeft}>Spanish (beginner)</Text>
         <Text style={styles.titleLeft}>Hobby</Text>
-        <Text style={styles.textLeft}>Yoga, Acro Yoga, Tabletop Games,</Text>
+        <Text style={styles.textLeft}>Acro Yoga, Tabletop Games,</Text>
         <Text style={styles.textLeft}>Rollerblades, Slackline,</Text>
         <Text style={styles.textLeft}>Rock Music, Painting</Text>
+        <Text style={styles.textLeft}>Climbing, Drums</Text>
+
       </View>
       <View style={styles.section}>
         <Text
@@ -232,14 +234,16 @@ const MyDocument = () => (
         <Text style={{...styles.text,
           textTransform: "uppercase", marginBottom: 5, color: "#077DCA"}}>Junior Front-End Software Developer</Text>
 
-        <Text style={styles.textSmall}>A year ago, when I decided to change my profession, I did not think that</Text>
-        <Text style={styles.textSmall}>shortly after I would not see myself working in anything except programming.</Text>
-
         <Text style={styles.title}>EXPERIENCE</Text>
-        <Text style={styles.header}>Alpakara - Junior Frontend Developer</Text>
+        <Text style={styles.header}>Apriside - Internship Front-End Web Developer</Text>
+        <Text style={styles.text}>July 2021 – August 2021</Text>
+        <Text style={styles.text}>
+          making widgets for application in React and Typescript 
+        </Text>
+        <Text style={styles.header}>Alpakara - Junior Front-End Developer</Text>
         <Text style={styles.text}>March 2021 – May 2021</Text>
         <Text style={styles.text}>
-          project "Self Authoring" written with React
+          project "Self Authoring" made in React
         </Text>
         <Text style={styles.header}>F.H. KAJA-BIS, Cracow – Sales Manager</Text>
         <Text style={styles.text}>December 2015 – Current</Text>
@@ -260,11 +264,6 @@ const MyDocument = () => (
         <Text style={styles.text}>
           Advanced HTML and CSS, JavaScript, React.js course
         </Text>
-
-        <Text style={styles.header}>Advanced React – Eduweb</Text>
-        <Text style={styles.text}>February 2021</Text>
-        <Text style={styles.text}>Advanced React.js course with Redux, Context API, </Text>
-        <Text style={styles.text}>Styled Components, JEST Unit Tests</Text>
 
         <Text style={styles.header}>Gatsby.js – Eduweb</Text>
         <Text style={styles.text}>October 2020</Text>
@@ -299,7 +298,7 @@ const MyDocument = () => (
             fontSize: 9,
             positon: "absolute",
             left: "-170px",
-            bottom: "-40px",
+            bottom: "-60px",
             width: 550,
             textAlign: "center",
           }}
