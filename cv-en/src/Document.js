@@ -121,8 +121,6 @@ const styles = StyleSheet.create({
     textDecoration: "none",
     color: "#077DCA",
   },
-
-
 });
 
 // Create Document Component
@@ -144,70 +142,82 @@ const MyDocument = () => (
           SASS, Figma.com, GIT, Scrum,
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          Redux, Graphql, Rest API, 
+          Redux, Graphql, Rest API,
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-           Trello,  TypeScript, Headless CMS 
+          Trello, TypeScript, Headless CMS
         </Text>
-
 
         <Text style={styles.titleLeft}>Projects</Text>
 
-        <Text style={styles.headerLeft}>Acro Game   <Link style={styles.link} src="http://acrogame.net/">
+        <Text style={styles.headerLeft}>
+          Acro Game{" "}
+          <Link style={styles.link} src="http://acrogame.net/" target="_blank">
             Link
-        </Link></Text>
+          </Link>
+        </Text>
         <Text style={styles.textLeft}>Project made out of passion for</Text>
         <Text style={styles.textLeft}>acro yoga and programming. </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
-        
-        <Text style={styles.headerLeft}>Favnote   <Link
-          style={styles.link}
-          src="https://github.com/KajaPiechowka/favnote-app"
-        >
-          Github
-        </Link></Text>
+
+        <Text style={styles.headerLeft}>
+          Oddam w Dobre Ręce{" "}
+          <Link
+            style={styles.link}
+            src="https://swap-shop-fb6b8.web.app/"
+            target="_blank"
+          >
+            Link
+          </Link>
+        </Text>
+        <Text style={styles.textLeft}>CodersLab workshop</Text>
+        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
+
+        <Text style={styles.headerLeft}>
+          Favnote
+          <Link
+            style={styles.link}
+            src="https://github.com/KajaPiechowka/favnote-app"
+            target="_blank"
+          >
+            Github
+          </Link>
+        </Text>
         <Text style={styles.textLeft}>Eduweb workshop from</Text>
         <Text style={styles.textLeft}> advanced React.js course.</Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          React.js
-        </Text>
+        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
 
-        <Text style={styles.headerLeft}>My Shibari Life   <Link
-          style={styles.link}
-          src="https://github.com/KajaPiechowka/myShibariLife"
-        >
-          Github
-        </Link></Text>
-        <Text style={styles.textLeft}>
-          Website for shibari school in 
+        <Text style={styles.headerLeft}>
+          My Shibari Life{" "}
+          <Link
+            style={styles.link}
+            src="https://github.com/KajaPiechowka/myShibariLife"
+            target="_blank"
+          >
+            Github
+          </Link>
         </Text>
+        <Text style={styles.textLeft}>Website for shibari school in</Text>
         <Text style={styles.textLeft}>Cracow. Project , design and code </Text>
         <Text style={styles.textLeft}>made by myself </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           Gatsby.js
         </Text>
-        
 
-        <Text style={styles.headerLeft}>Hatta Website   <Link
-          style={styles.link}
-          src="https://github.com/KajaPiechowka/gatsby-hatta-website"
-        >
-          Github
-        </Link></Text>
+        <Text style={styles.headerLeft}>
+          Hatta Website
+          <Link
+            style={styles.link}
+            src="https://github.com/KajaPiechowka/gatsby-hatta-website"
+            target="_blank"
+          >
+            Github
+          </Link>
+        </Text>
         <Text style={styles.textLeft}>Eduweb workshop </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           Gatsby.js
         </Text>
-        
-
-        <Text style={styles.headerLeft}>Oddam w Dobre Ręce   <Link
-          style={styles.link}
-          src="https://github.com/KajaPiechowka/oddam-w-dobre-rece"
-        >
-          Github
-        </Link></Text>
-        <Text style={styles.textLeft}>CodersLab workshop</Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
 
         <Text style={styles.titleLeft}>Languages</Text>
         <Text style={styles.textLeft}>English (intermediate)</Text>
@@ -217,7 +227,6 @@ const MyDocument = () => (
         <Text style={styles.textLeft}>Rollerblades, Slackline,</Text>
         <Text style={styles.textLeft}>Rock Music, Painting</Text>
         <Text style={styles.textLeft}>Climbing, Drums</Text>
-
       </View>
       <View style={styles.section}>
         <Text
@@ -231,20 +240,28 @@ const MyDocument = () => (
         >
           Kaja Piechówka
         </Text>
-        <Text style={{...styles.text,
-          textTransform: "uppercase", marginBottom: 5, color: "#077DCA"}}>Junior Front-End Software Developer</Text>
+        <Text
+          style={{
+            ...styles.text,
+            textTransform: "uppercase",
+            marginBottom: 5,
+            color: "#077DCA",
+          }}
+        >
+          Junior Front-End Software Developer
+        </Text>
 
         <Text style={styles.title}>EXPERIENCE</Text>
-        <Text style={styles.header}>Apriside - Internship Front-End Web Developer</Text>
+        <Text style={styles.header}>
+          Apriside - Internship Front-End Web Developer
+        </Text>
         <Text style={styles.text}>July 2021 – August 2021</Text>
         <Text style={styles.text}>
-          making widgets for application in React and Typescript 
+          making widgets for application in React and Typescript
         </Text>
         <Text style={styles.header}>Alpakara - Junior Front-End Developer</Text>
         <Text style={styles.text}>March 2021 – May 2021</Text>
-        <Text style={styles.text}>
-          project "Self Authoring" made in React
-        </Text>
+        <Text style={styles.text}>project "Self Authoring" made in React</Text>
         <Text style={styles.header}>F.H. KAJA-BIS, Cracow – Sales Manager</Text>
         <Text style={styles.text}>December 2015 – Current</Text>
         <Text style={styles.text}>
@@ -268,7 +285,7 @@ const MyDocument = () => (
         <Text style={styles.header}>Gatsby.js – Eduweb</Text>
         <Text style={styles.text}>October 2020</Text>
         <Text style={styles.text}>Complete course of Gatsby.js</Text>
-        
+
         <Text style={styles.header}>Scrum Lab – Coders Lab</Text>
         <Text style={styles.text}>July 2020</Text>
         <Text style={styles.text}>
@@ -285,7 +302,6 @@ const MyDocument = () => (
         <Text style={styles.text}>
           basics of marketing and advertising on the Internet
         </Text>
-        
 
         <Text style={styles.title}>Education</Text>
         <Text style={styles.header}>Socrates High School, Cracow</Text>
