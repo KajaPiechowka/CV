@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDidection: "column",
     height: 740,
-    paddingTop: 77,
+    paddingTop: 60,
   },
 
   title: {
@@ -101,6 +101,12 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: "#484849",
   },
+  date: {
+    fontFamily: "Karla",
+    fontSize: 11,
+    color: "#484849",
+    marginBottom: 5,
+  },
   textSmall: {
     fontFamily: "Karla",
     fontSize: 10,
@@ -133,95 +139,44 @@ const MyDocument = () => (
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           (+48) 698 699 547
         </Text>
-        <Text style={styles.textLeft}>kaja.piechowka@gmail.com</Text>
+        <Text style={{ ...styles.textLeft, marginBottom: 20 }}>
+          kaja.piechowka@gmail.com
+        </Text>
         <Text style={styles.titleLeft}>Technologies</Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           JavaScript, React.js, Gatsby.js,
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          SASS, Figma.com, GIT, Scrum,
+          Figma.com, GIT, Scrum,
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          Redux, Graphql, Rest API,
+          Word, Excel, SQL
         </Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          Trello, TypeScript, Headless CMS
-        </Text>
-
-        <Text style={styles.titleLeft}>Projects</Text>
-
-        <Text style={styles.headerLeft}>
-          Acro Game{" "}
-          <Link style={styles.link} src="http://acrogame.net/" target="_blank">
-            Link
-          </Link>
-        </Text>
-        <Text style={styles.textLeft}>Project made out of passion for</Text>
-        <Text style={styles.textLeft}>acro yoga and programming. </Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
-
-        <Text style={styles.headerLeft}>
-          Oddam w Dobre Ręce{" "}
-          <Link
-            style={styles.link}
-            src="https://swap-shop-fb6b8.web.app/"
-            target="_blank"
-          >
-            Link
-          </Link>
-        </Text>
-        <Text style={styles.textLeft}>CodersLab workshop</Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
-
-        <Text style={styles.headerLeft}>
-          Favnote
-          <Link
-            style={styles.link}
-            src="https://github.com/KajaPiechowka/favnote-app"
-            target="_blank"
-          >
-            Github
-          </Link>
-        </Text>
-        <Text style={styles.textLeft}>Eduweb workshop from</Text>
-        <Text style={styles.textLeft}> advanced React.js course.</Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
-
-        <Text style={styles.headerLeft}>
-          My Shibari Life{" "}
-          <Link
-            style={styles.link}
-            src="https://github.com/KajaPiechowka/myShibariLife"
-            target="_blank"
-          >
-            Github
-          </Link>
-        </Text>
-        <Text style={styles.textLeft}>Website for shibari school in</Text>
-        <Text style={styles.textLeft}>Cracow. Project , design and code </Text>
-        <Text style={styles.textLeft}>made by myself </Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          Gatsby.js
+        <Text
+          style={{ ...styles.textLeft, fontWeight: "bold", marginBottom: 20 }}
+        >
+          Trello, Headless CMS
         </Text>
 
-        <Text style={styles.headerLeft}>
-          Hatta Website
-          <Link
-            style={styles.link}
-            src="https://github.com/KajaPiechowka/gatsby-hatta-website"
-            target="_blank"
-          >
-            Github
-          </Link>
-        </Text>
-        <Text style={styles.textLeft}>Eduweb workshop </Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          Gatsby.js
+        <Text style={styles.titleLeft}>Courses</Text>
+
+        <Text style={styles.headerLeft}>JavaScript Developer: React</Text>
+        <Text style={styles.textLeft}> March 2020 - October 2020</Text>
+
+        <Text style={styles.headerLeft}>Scrum Lab </Text>
+        <Text style={styles.textLeft}>July 2020</Text>
+
+        <Text style={styles.headerLeft}>Piercing Cource</Text>
+        <Text style={styles.textLeft}>January 2020</Text>
+
+        <Text style={styles.headerLeft}>Computer Graphics Course</Text>
+        <Text style={styles.textLeft}>October 2017 - January 2018</Text>
+
+        <Text style={styles.headerLeft}>Classic massage course</Text>
+        <Text style={{ ...styles.textLeft, marginBottom: 20 }}>
+          October 2015 - March 2016
         </Text>
 
-        <Text style={styles.titleLeft}>Languages</Text>
-        <Text style={styles.textLeft}>English (intermediate)</Text>
-        <Text style={styles.textLeft}>Spanish (beginner)</Text>
         <Text style={styles.titleLeft}>Hobby</Text>
         <Text style={styles.textLeft}>Acro Yoga, Tabletop Games,</Text>
         <Text style={styles.textLeft}>Rollerblades, Slackline,</Text>
@@ -232,7 +187,7 @@ const MyDocument = () => (
         <Text
           style={{
             ...styles.title,
-            marginBottom: 0,
+            marginBottom: 50,
             fontSize: 20,
             marginTop: 10,
             color: "black",
@@ -240,73 +195,59 @@ const MyDocument = () => (
         >
           Kaja Piechówka
         </Text>
-        <Text
-          style={{
-            ...styles.text,
-            textTransform: "uppercase",
-            marginBottom: 5,
-            color: "#077DCA",
-          }}
-        >
-          Junior Front-End Software Developer
-        </Text>
 
         <Text style={styles.title}>EXPERIENCE</Text>
         <Text style={styles.header}>
           Apriside - Internship Front-End Web Developer
         </Text>
-        <Text style={styles.text}>July 2021 – August 2021</Text>
+        <Text style={styles.date}>July 2021 – August 2021</Text>
         <Text style={styles.text}>
-          making widgets for application in React and Typescript
+          programming widgets for application in React and Typescript, working
         </Text>
-        <Text style={styles.header}>Alpakara - Junior Front-End Developer</Text>
-        <Text style={styles.text}>March 2021 – May 2021</Text>
-        <Text style={styles.text}>project "Self Authoring" made in React</Text>
-        <Text style={styles.header}>F.H. KAJA-BIS, Cracow – Sales Manager</Text>
-        <Text style={styles.text}>December 2015 – Current</Text>
         <Text style={styles.text}>
-          Employee management, delivery and ordering of goods,
+          in the team, participating in weekly meetings, finding new solutions
+        </Text>
+        <Text style={styles.text}>for the project</Text>
+        <Text style={styles.header}>Alpakara - Junior Front-End Developer</Text>
+        <Text style={styles.date}>March 2021 – May 2021</Text>
+        <Text style={styles.text}>
+          project "Self Authoring" made in React - helping with UX/UI design for
+        </Text>
+        <Text style={styles.text}>
+          the project, translations, programming layout and advanced forms for
+          web app
+        </Text>
+        <Text style={styles.header}>DC Site Service - festival staff</Text>
+        <Text style={styles.date}>June 2020 – September 2020</Text>
+        <Text style={styles.text}>
+          team leading, logistic, traffic managing, cleaning service
+        </Text>
+        <Text style={styles.text}>information assistant, manual worker</Text>
+        <Text style={styles.header}>F.H. KAJA-BIS, Cracow – Sales Manager</Text>
+        <Text style={styles.date}>December 2015 – June 2020</Text>
+        <Text style={styles.text}>
+          Managing small team, setting the workflow,
+        </Text>
+        <Text style={styles.text}>
+          delivering and ordering of goods, hiring new employees
         </Text>
         <Text style={styles.text}>
           customer service, cash register service.
         </Text>
 
-        <Text style={styles.title}>Courses</Text>
-
-        <Text style={styles.header}>
-          JavaScript Developer: React – Coders Lab
-        </Text>
-        <Text style={styles.text}> March 2020 - October 2020</Text>
-        <Text style={styles.text}> 434h of lessons</Text>
-        <Text style={styles.text}>
-          Advanced HTML and CSS, JavaScript, React.js course
-        </Text>
-
-        <Text style={styles.header}>Gatsby.js – Eduweb</Text>
-        <Text style={styles.text}>October 2020</Text>
-        <Text style={styles.text}>Complete course of Gatsby.js</Text>
-
-        <Text style={styles.header}>Scrum Lab – Coders Lab</Text>
-        <Text style={styles.text}>July 2020</Text>
-        <Text style={styles.text}>
-          A project aimed at preparing for teamwork in the Scrum
-        </Text>
-
-        <Text style={styles.header}>
-          Computer Graphics Course – Szkoła Grafiki Komputerowej
-        </Text>
-        <Text style={styles.text}>October 2017 - January 2018</Text>
-        <Text style={styles.text}>
-          Adobe Illustrator, Adobe Photoshop, Adobe Flash,
-        </Text>
-        <Text style={styles.text}>
-          basics of marketing and advertising on the Internet
-        </Text>
-
         <Text style={styles.title}>Education</Text>
+        <Text style={styles.header}>Gloker Shool for Adults, Cracow</Text>
+        <Text style={styles.text}>September 2015 – April 2016</Text>
+        <Text style={styles.text}>Gastronomy</Text>
+
         <Text style={styles.header}>Socrates High School, Cracow</Text>
         <Text style={styles.text}>September 2012 – April 2014</Text>
         <Text style={styles.text}>Mathematical and geographical profile</Text>
+
+        <Text style={styles.title}>Languages</Text>
+        <Text style={styles.text}>Polish (native)</Text>
+        <Text style={styles.text}>English (advanced)</Text>
+        <Text style={styles.text}>Spanish (communicative)</Text>
 
         <Text
           style={{
