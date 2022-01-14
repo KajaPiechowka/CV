@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
     color: "#077DCA",
     fontSize: 14,
-    margin: "10 6 6 6",
+    margin: "20 6 6 6",
   },
   header: {
     fontFamily: "Lato",
@@ -116,8 +116,8 @@ const styles = StyleSheet.create({
   },
 
   link: {
-    fontSize: 11,
-    margin: 6,
+    fontSize: 10,
+    margin: "4 6 0 4",
     textDecoration: "none",
     color: "#077DCA",
   },
@@ -134,12 +134,26 @@ const MyDocument = () => (
           (+48) 698 699 547
         </Text>
         <Text style={styles.textLeft}>kaja.piechowka@gmail.com</Text>
+        <Link
+          style={styles.link}
+          src="https://github.com/KajaPiechowka"
+          target="_blank"
+        >
+          Github Profile
+        </Link>
+        <Link
+          style={styles.link}
+          src="https://www.linkedin.com/in/kaja-piech%C3%B3wka-1435081a5/"
+          target="_blank"
+        >
+          Linkedin Profile
+        </Link>
         <Text style={styles.titleLeft}>Technologies</Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           JavaScript, React.js, Gatsby.js,
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          SASS, Figma.com, GIT, Scrum,
+          SASS, Redux, GIT, Scrum,
         </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           Redux, Graphql, Rest API,
@@ -147,11 +161,14 @@ const MyDocument = () => (
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           Trello, TypeScript, Headless CMS
         </Text>
+        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
+          Docker, Figma.com, AdobeXD
+        </Text>
 
         <Text style={styles.titleLeft}>Projects</Text>
 
         <Text style={styles.headerLeft}>
-          Acro Game{" "}
+          Acro Game
           <Link style={styles.link} src="http://acrogame.net/" target="_blank">
             Link
           </Link>
@@ -174,20 +191,6 @@ const MyDocument = () => (
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
 
         <Text style={styles.headerLeft}>
-          Favnote
-          <Link
-            style={styles.link}
-            src="https://github.com/KajaPiechowka/favnote-app"
-            target="_blank"
-          >
-            Github
-          </Link>
-        </Text>
-        <Text style={styles.textLeft}>Eduweb workshop from</Text>
-        <Text style={styles.textLeft}> advanced React.js course.</Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>React.js</Text>
-
-        <Text style={styles.headerLeft}>
           My Shibari Life{" "}
           <Link
             style={styles.link}
@@ -200,21 +203,6 @@ const MyDocument = () => (
         <Text style={styles.textLeft}>Website for shibari school in</Text>
         <Text style={styles.textLeft}>Cracow. Project , design and code </Text>
         <Text style={styles.textLeft}>made by myself </Text>
-        <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
-          Gatsby.js
-        </Text>
-
-        <Text style={styles.headerLeft}>
-          Hatta Website
-          <Link
-            style={styles.link}
-            src="https://github.com/KajaPiechowka/gatsby-hatta-website"
-            target="_blank"
-          >
-            Github
-          </Link>
-        </Text>
-        <Text style={styles.textLeft}>Eduweb workshop </Text>
         <Text style={{ ...styles.textLeft, fontWeight: "bold" }}>
           Gatsby.js
         </Text>
@@ -248,7 +236,7 @@ const MyDocument = () => (
             color: "#077DCA",
           }}
         >
-          Junior Front-End Software Developer
+          Junior Front-End Developer
         </Text>
 
         <Text style={styles.title}>EXPERIENCE</Text>
@@ -259,17 +247,11 @@ const MyDocument = () => (
         <Text style={styles.text}>
           making widgets for application in React and Typescript
         </Text>
-        <Text style={styles.header}>Alpakara - Junior Front-End Developer</Text>
+        <Text style={styles.header}>
+          Alpakara - Front-End Developer Entry Level
+        </Text>
         <Text style={styles.text}>March 2021 – May 2021</Text>
         <Text style={styles.text}>project "Self Authoring" made in React</Text>
-        <Text style={styles.header}>F.H. KAJA-BIS, Cracow – Sales Manager</Text>
-        <Text style={styles.text}>December 2015 – Current</Text>
-        <Text style={styles.text}>
-          Employee management, delivery and ordering of goods,
-        </Text>
-        <Text style={styles.text}>
-          customer service, cash register service.
-        </Text>
 
         <Text style={styles.title}>Courses</Text>
 
@@ -314,7 +296,7 @@ const MyDocument = () => (
             fontSize: 9,
             positon: "absolute",
             left: "-170px",
-            bottom: "-60px",
+            bottom: "-130px",
             width: 550,
             textAlign: "center",
           }}
